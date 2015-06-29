@@ -28,8 +28,7 @@ public class Application extends SpringBootServletInitializer {
 	
 	@PostConstruct
 	public void init() {
-		System.out.println("Application init.");
+		System.out.println("Application init ####.");
 	}
 
-	
 }
