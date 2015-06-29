@@ -31,4 +31,5 @@ public class Application extends SpringBootServletInitializer {
 		System.out.println("Application init.");
 	}
 
+	
 }
