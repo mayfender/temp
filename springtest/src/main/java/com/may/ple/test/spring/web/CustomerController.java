@@ -13,8 +13,15 @@ public class CustomerController {
 
 	@RequestMapping("/hello")
 	public String hello() {
-		String restult = customerServic.calculate(5);
-		return "########## " + restult;
+		String restult = null;
+		
+		try {
+			restult = customerServic.calculate(5);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return "########## " + restult;			
 	}
 
 }

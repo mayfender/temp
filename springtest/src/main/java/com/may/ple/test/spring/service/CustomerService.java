@@ -1,12 +1,7 @@
 package com.may.ple.test.spring.service;
 
-import org.springframework.stereotype.Service;
-
-@Service
-public class CustomerService {
+public interface CustomerService {
 	
-	public String calculate(int x) {
-		return ""+(x * 10);
-	}
+	public String calculate(int x) throws Exception;
 
 }
