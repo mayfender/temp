@@ -8,9 +8,13 @@ import com.may.ple.test.spring.service.CustomerService;
 
 @RestController
 public class CustomerController {
-	@Autowired
 	private CustomerService customerServic;
 
+	@Autowired
+	public CustomerController(CustomerService customerServic) {
+		this.customerServic = customerServic;
+	}
+	
 	@RequestMapping("/hello")
 	public String hello() {
 		String restult = null;
